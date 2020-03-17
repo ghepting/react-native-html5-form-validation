@@ -6,7 +6,8 @@ export default function App() {
   const handleSubmit = e => {
     e.preventDefault();
     const invalidFields = [];
-    e.target.querySelectorAll("input, textarea, select").forEach(field => {
+    const fields = e.target.querySelectorAll("input, textarea, select");
+    fields.forEach(field => {
       if (!field.validity.valid) {
         field.parentNode.classList.add("error");
         invalidFields.push(field);
