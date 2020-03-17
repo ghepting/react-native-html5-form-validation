@@ -1,0 +1,18 @@
+.error {
+  color: red;
+  
+  input {
+    border-color: red;
+  }
+}
+
+label {
+  margin-right: 1ex;
+}
+
+input {
+  padding: 1ex;
+  border-radius: 0.3ex;
+  border: 1px solid #000;
+  appearance: none;
+}
